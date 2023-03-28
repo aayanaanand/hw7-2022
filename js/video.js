@@ -10,11 +10,10 @@
 	console.log("Loop is set to false");
 	vid.loop = false;
 
-	document.querySelector("#volume").innerHTML = vid.volume*100 + "%";
-
 	function playVid() { 
 		console.log("Play Video");
-		vid.play(); 
+		vid.play();
+		document.querySelector("#volume").innerHTML = vid.volume*100 + "%"; 
 	} 
 	
 	function pauseVid() { 
@@ -24,13 +23,13 @@
 
 	function slowerVid() { 
 		console.log("Slower Video");
-		vid.defaultPlaybackRate *= 0.9;
+		vid.defaultPlaybackRate *= 0.95;
 		console.log(vid.defaultPlaybackRate);
 	}
 
 	function fasterVid() { 
 		console.log("Faster Video");
-		vid.defaultPlaybackRate *= 1.1;
+		vid.defaultPlaybackRate *= 1.05;
 		console.log(vid.defaultPlaybackRate);
 	}
 
