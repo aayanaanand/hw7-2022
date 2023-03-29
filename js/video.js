@@ -23,14 +23,14 @@
 
 	function slowerVid() { 
 		console.log("Slower Video");
-		vid.defaultPlaybackRate *= 0.95;
-		console.log(vid.defaultPlaybackRate);
+		vid.playbackRate *= 0.95;
+		console.log(vid.playbackRate);
 	}
 
 	function fasterVid() { 
 		console.log("Faster Video");
-		vid.defaultPlaybackRate *= 1.05;
-		console.log(vid.defaultPlaybackRate);
+		vid.playbackRate *= 1.05;
+		console.log(vid.playbackRate);
 	}
 
 	function skipVid() { 
