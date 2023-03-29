@@ -40,14 +40,14 @@
 	}
 
 	function muteVid() {
-		if(vid.muted = true) {
-			console.log("Unmute Video");
+		if(vid.muted == true) {
 			vid.muted = false;
-			document.querySelector("#mute").value = "Mute";
-		} else {
 			console.log("Mute Video");
+			document.querySelector("#mute").textContent = "Mute";
+		} else {
 			vid.muted = true;
-			document.querySelector("#mute").value = "Unmute";
+			console.log("Unmute Video");
+			document.querySelector("#mute").textContent = "Unmute";
 		};
 	}
 
