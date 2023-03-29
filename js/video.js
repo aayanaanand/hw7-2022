@@ -23,13 +23,13 @@
 
 	function slowerVid() { 
 		console.log("Slower Video");
-		vid.playbackRate *= 0.95;
+		vid.playbackRate *= 0.9;
 		console.log(vid.playbackRate);
 	}
 
 	function fasterVid() { 
 		console.log("Faster Video");
-		vid.playbackRate *= 1.05;
+		vid.playbackRate *= 1.1;
 		console.log(vid.playbackRate);
 	}
 
